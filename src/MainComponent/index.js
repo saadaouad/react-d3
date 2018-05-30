@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import LineChartComponent from '../LineChartComponent/index.js'
+import BarChartComponent from '../BarChartComponent/index.js'
 import './styles.css';
 
 class MainComponent extends Component {
@@ -11,7 +12,8 @@ class MainComponent extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React and D3</h1>
         </header>
-        <LineChartComponent isMobile/>
+        <LineChartComponent />
+        <BarChartComponent />
       </div>
     );
   }
