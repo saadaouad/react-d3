@@ -37,8 +37,8 @@ class BarChartComponent extends Component {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="pv" fill="#8884d8" />
-            <Bar dataKey="uv" fill="#82ca9d" />
+            <Bar dataKey="pv" fill="#317daf" />
+            <Bar dataKey="uv" fill="#c44848" />
           </BarChart>
         </div>
         {/* Mobile view */}
@@ -49,8 +49,8 @@ class BarChartComponent extends Component {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="pv" fill="#8884d8" />
-            <Bar dataKey="uv" fill="#82ca9d" />
+            <Bar dataKey="pv" fill="#317daf" />
+            <Bar dataKey="uv" fill="#c44848" />
           </BarChart>
         </div>
       </div>
