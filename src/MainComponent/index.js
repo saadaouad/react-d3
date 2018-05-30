@@ -11,7 +11,7 @@ class MainComponent extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React and D3</h1>
         </header>
-        <LineChartComponent />
+        <LineChartComponent isMobile/>
       </div>
     );
   }

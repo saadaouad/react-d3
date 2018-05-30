@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import {
   LineChart,
-  BarChart,
   CartesianGrid,
   XAxis,
   YAxis,
   Tooltip,
   Legend,
   Line,
-  Bar,
 } from 'recharts';
 
 class LineChartComponent extends Component {
@@ -22,9 +20,18 @@ class LineChartComponent extends Component {
     ];
     return (
       <div className="mt5">
-        <div>
-          <h3>LineChart</h3>
-          <LineChart width={630} height={250} data={data}>
+        <h3 className="underline pt1 pb3">LineChart</h3>
+        <div className="db-ns dn">
+          <LineChart
+            width={650}
+            height={250}
+            data={data}
+            style={{
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              width: '50%',
+            }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis />
@@ -34,17 +41,17 @@ class LineChartComponent extends Component {
             <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
           </LineChart>
         </div>
-        <div>
-          <h3>BarChart</h3>
-          <BarChart width={630} height={250} data={data}>
+        {/* Mobile view */}
+        <div className="dn-ns db">
+          <LineChart width={350} height={250} data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="pv" fill="#8884d8" />
-            <Bar dataKey="uv" fill="#82ca9d" />
-          </BarChart>
+            <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          </LineChart>
         </div>
       </div>
     );
