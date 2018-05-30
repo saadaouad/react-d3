@@ -1,5 +1,7 @@
 # react-d3
+Simple charts with React and D3 
 
+Demo https://react-d3.netlify.com/
 ## Getting Started
 ### Installation using CLI `create-react-app` with no build configuration
 `yarn global add create-react-app` or `npm install -g create-react-app`
