@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import LineChartComponent from '../LineChartComponent/index.js'
 import BarChartComponent from '../BarChartComponent/index.js'
-import './styles.css';
+import './styles.scss';
 
 class MainComponent extends Component {
   render() {
